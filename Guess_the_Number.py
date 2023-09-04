@@ -1,16 +1,16 @@
-import random
+import random  # Для генерации случайного числа
 
-low_digit = 10
-high_digit = 50
-digit = 0
-count_input = 0
-win = False
-play_game = True
-x = 0
-start_score = 100
-score = 0
-max_score = 100
+low_digit = 10  # Нижняя граница случайного числа
+high_digit = 50  # Верхняя граница случайного числа
+what_is_digit = 0  # Загаданное компьютером число
+count_input = 0  # Количество попыток угадать
+win_Flag = False  # Угадал текущее число?
+play_game_Flag = True  # Продолжается ли игра?
+x = 0  # Число, которое вводит пользователь
+start_score = 100  # Начальное количество очков
+score = 0  # Текущее количество очков
+max_score = 100  # Максимальное за сессию игры
 
-digit = random.randint(low_digit, high_digit)
+what_is_digit = random.randint(low_digit, high_digit)
 print('Компьютер загадал число, попробуйте отгадать!')
-print(f'Загаданное число: {digit}')
+print(f'Загаданное число: {what_is_digit}')
