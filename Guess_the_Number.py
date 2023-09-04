@@ -10,3 +10,7 @@ x = 0
 start_score = 100
 score = 0
 max_score = 100
+
+digit = random.randint(low_digit, high_digit)
+print('Компьютер загадал число, попробуйте отгадать!')
+print(f'Загаданное число: {digit}')
